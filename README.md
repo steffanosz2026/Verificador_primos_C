@@ -12,3 +12,5 @@ Por su equivalente algebraico seguro de división:
 `contador <= numero / contador`
 
 Esto reduce la complejidad computacional a $O(\sqrt{N})$ de forma segura para los registros de 32 bits de la CPU.
+
+En una futura optimizacion se pretende saltarse los pares después de comprobar que el número no es divisible entre 2, haciendo que el bucle avance de 2 en 2 (i += 2), probando solo los números impares ($3, 5, 7, 9...$). Esto duplicaria la velocidad del código.
